@@ -1,0 +1,143 @@
+{
+  "chat.tools.terminal.autoApprove": {
+      "/^.*$/": true           // Auto-approve any command"
+  },
+  "workbench.editorAssociations.dummy": {
+      "*.md": "vscode.markdown.preview.editor"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+    "files.watcherExclude": {
+      "**/.bloop/**": true,
+      "**/.metals/**/*.{java,scala}": true
+    },
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "window.openFoldersInNewWindow": "on",
+    "workbench.tree.indent": 24,
+    "editor.minimap.enabled": false,
+    "git.openRepositoryInParentFolders": "always",
+    "update.mode": "none",
+    "git.ignoreRebaseWarning": true,
+    "makefile.configureOnOpen": false,
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "nix.formatterPath": "nixfmt",
+    "nix.serverPath": "nil", // or "nixd", or ["executable", "argument1", ...]
+    // LSP config can be passed via the ``nix.serverSettings.{lsp}`` as shown below.
+    "nix.serverSettings": {
+      // check https://github.com/oxalica/nil/blob/main/docs/configuration.md for all options available
+      "nil": {
+        // "diagnostics": {
+        //  "ignored": ["unused_binding", "unused_with"],
+        // },
+        "formatting": {
+          "command": ["nixfmt"],
+        },
+      },
+      // check https://github.com/nix-community/nixd/blob/main/nixd/docs/configuration.md for all nixd config
+      "nixd": {
+        "formatting": {
+          "command": ["nixfmt"],
+        },
+        "options": {
+          // By default, this entry will be read from `import <nixpkgs> { }`.
+          // You can write arbitrary Nix expressions here, to produce valid "options" declaration result.
+          // Tip: for flake-based configuration, utilize `builtins.getFlake`
+          "nixos": {
+            "expr": "(builtins.getFlake \"/absolute/path/to/flake\").nixosConfigurations.<name>.options",
+          },
+          "home-manager": {
+            "expr": "(builtins.getFlake \"/absolute/path/to/flake\").homeConfigurations.<name>.options",
+          },
+          // Tip: use ${workspaceFolder} variable to define path
+          "nix-darwin": {
+            "expr": "(builtins.getFlake \"${workspaceFolder}/path/to/flake\").darwinConfigurations.<name>.options",
+          },
+        },
+      }
+    },
+    "gitlens.views.scm.grouped.views": {
+      "commits": true,
+      "branches": true,
+      "remotes": true,
+      "stashes": true,
+      "tags": true,
+      "worktrees": true,
+      "contributors": true,
+      "fileHistory": false,
+      "repositories": true,
+      "searchAndCompare": true,
+      "launchpad": false
+    },
+    "nix.enableLanguageServer": true,
+    "[nix]": {
+      "editor.defaultFormatter": "B4dM4n.nixpkgs-fmt"
+    },
+    "chat.mcp.gallery.enabled": true,
+    "github.copilot.chat.githubMcpServer.enabled": true,
+    "chat.mcp.serverSampling": {
+      
+    },
+    "chat.useAgentSkills": true,
+    "haskell.manageHLS": "PATH",
+    "metals.serverVersion": "1.6.8",
+    "[markdown]": {
+      "editor.wordWrap": "off"
+    },
+    "chat.viewSessions.orientation": "stacked",
+    "claudeCode.selectedModel": "claude-opus-4-8",
+    "claudeCode.preferredLocation": "panel",
+    "github.copilot.chat.claudeAgent.allowDangerouslySkipPermissions": true,
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.analysis.typeCheckingMode": "standard",
+    "workbench.colorTheme": "Atom One Dark",
+    "claudeCode.environmentVariables": [
+    ],
+    "window.closeWhenEmpty": true,
+    "claudeCode.useCtrlEnterToSend": true,
+    "claudeCode.allowDangerouslySkipPermissions": true,
+    "claudeCode.enableNewConversationShortcut": true,
+    "claudeCode.disableLoginPrompt": true,
+    "claudeCode.initialPermissionMode": "bypassPermissions",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "python.autoComplete.extraPaths": [
+    ],
+    "chat.tools.urls.autoApprove": {
+      "https://code.visualstudio.com": true,
+      "https://github.com/microsoft/vscode/wiki/*": true,
+      "https://aws.amazon.com/lambda/pricing": true,
+      "https://aws.amazon.com/lambda": true,
+      "https://aws.amazon.com": true,
+      "https://*.amazon.com": true,
+      "https://aws.amazon.com/fargate/pricing": true,
+      "https://aws.amazon.com/fargate": true,
+      "https://aws.amazon.com/eventbridge/pricing": true,
+      "https://aws.amazon.com/eventbridge": true,
+      "https://aws.amazon.com/dynamodb/pricing/on-demand": true,
+      "https://aws.amazon.com/dynamodb/pricing": true,
+      "https://aws.amazon.com/dynamodb": true,
+      "https://docs.alpaca.markets/reference/stocklatestbars": true,
+      "https://docs.alpaca.markets/reference": true,
+      "https://docs.alpaca.markets": true,
+      "https://*.alpaca.markets": true,
+      "https://docs.alpaca.markets/reference/stockbars": true,
+      "https://ibkrcampus.com/docs/tws-api/doc.md": true,
+      "https://ibkrcampus.com/docs/tws-api": true,
+      "https://ibkrcampus.com/docs": true,
+      "https://ibkrcampus.com": true,
+      "https://www.interactivebrokers.com/campus/ibkr-api-page/cpapi-v1": true,
+      "https://www.interactivebrokers.com/campus/ibkr-api-page": true,
+      "https://www.interactivebrokers.com/campus": true,
+      "https://www.interactivebrokers.com": true,
+      "https://*.interactivebrokers.com": true,
+      "https://docs.github.com": {
+        "approveRequest": false,
+        "approveResponse": true
+      },
+      "https://docs.cloud.google.com": {
+        "approveRequest": false,
+        "approveResponse": true
+      },
+      "https://www.quantt.co.uk": true
+    }
+}
