@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Test packages (xunit, test SDK, coverage) are applied to every project
+       under tests/ by tests/Directory.Build.props. -->
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/App.Core/App.Core.csproj" />
+  </ItemGroup>
+
+</Project>
