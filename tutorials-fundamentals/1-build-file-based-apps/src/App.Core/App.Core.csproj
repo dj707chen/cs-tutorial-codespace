@@ -1,4 +1,5 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup>  <UserSecretsId>bb32444c-5564-43b5-8b51-455d5854d44d</UserSecretsId>
+  </PropertyGroup>
 
   <!-- TargetFramework, Nullable, analyzers, etc. come from the repo-root
        Directory.Build.props. Only project-specific settings belong here. -->

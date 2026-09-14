@@ -22,7 +22,7 @@ What framework or tool needs `/Users/weiping/tmp/App/Directory.Packages.props`?
   **no** `Version` attribute — e.g. `src/AsciiArt/AsciiArt.csproj`. Adding a
   `Version` there is an error (`NU1008`) under CPM.
 - `CentralPackageTransitivePinningEnabled=true` in `Directory.Build.props` also
-  makes those versions override transitive dependencies.
+  makes those versions override transitive dependencies.$$
 
 ### Who reads it
 
