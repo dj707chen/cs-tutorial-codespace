@@ -9,6 +9,19 @@ dotnet TaskCli.cs -- list --all
 dotnet TaskCli.cs -- complete 3
 dotnet TaskCli.cs -- remove 3
 dotnet TaskCli.cs -- --verbose list
+
+I'm using
+    dotnet run --project src/TaskCli
+to build and run TaskCli.csproj.
+This loads its NuGet package references, including System.CommandLine.
+
+dotnet run --project src/TaskCli -- add "Write documentation"  
+dotnet run --project src/TaskCli -- add "Write documentation" --priority High --due 2026-04-01
+dotnet run --project src/TaskCli -- list --all
+dotnet run --project src/TaskCli -- complete 3
+dotnet run --project src/TaskCli -- remove 3
+dotnet run --project src/TaskCli -- --verbose list
+
 */
 
 Console.WriteLine("Hello, TaskCli!");
