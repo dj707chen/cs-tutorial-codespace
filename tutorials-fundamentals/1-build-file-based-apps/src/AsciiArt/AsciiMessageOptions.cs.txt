@@ -1,0 +1,15 @@
+// 2. Add the necessary using statements at the top of your file
+////////////
+// Use parsed command line results
+//   https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/file-based-programs#use-parsed-command-line-results
+
+namespace AsciiArt;
+
+/// <summary>
+/// Represents options for ASCII art message rendering.
+/// </summary>
+/// <param name="Messages">Text to render.</param>
+/// <param name="Delay">Delay between lines, specified as milliseconds.</param>
+/// <param name="FontName">The name of the ASCII art font to use for rendering.</param>
+/// <param name="Color">The console color to use when rendering the text.</param>
+public record AsciiMessageOptions(string[] Messages, int Delay, string? FontName = null, ConsoleColor Color = ConsoleColor.White);

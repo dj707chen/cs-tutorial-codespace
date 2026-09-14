@@ -32,7 +32,7 @@
     <Deterministic>true</Deterministic>
     <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
     <RestorePackagesWithLockFile>false</RestorePackagesWithLockFile>
-    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally><!-- https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management -->
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
 
