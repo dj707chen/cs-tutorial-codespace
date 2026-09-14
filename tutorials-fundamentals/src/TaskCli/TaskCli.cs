@@ -1,9 +1,9 @@
+// https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/system-command-line
+
 using System.CommandLine;
 using System.CommandLine.Parsing;
 using System.Text.Json;
 /*
-https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/system-command-line
-
 dotnet TaskCli.cs -- add "Write documentation" --priority High --due 2026-04-01
 dotnet TaskCli.cs -- list --all
 dotnet TaskCli.cs -- complete 3

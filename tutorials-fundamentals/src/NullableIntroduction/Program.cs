@@ -1,11 +1,11 @@
+// https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/nullable-reference-types
+
 using System.CommandLine;
 using System.CommandLine.Parsing;
 using System.Text.Json;
 using NullableIntroduction;
 
 /*
-https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/nullable-reference-types
-
 dotnet Program.cs
 
 I'm using
