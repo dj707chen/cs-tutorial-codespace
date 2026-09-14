@@ -1,5 +1,5 @@
 // https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, World! 09/13");
 
 string aFriend = "Bill";
 Console.WriteLine(aFriend);
