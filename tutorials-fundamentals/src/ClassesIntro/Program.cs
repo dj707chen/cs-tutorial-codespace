@@ -4,11 +4,7 @@ using System.CommandLine;
 using System.CommandLine.Parsing;
 using System.Text.Json;
 /*
-dotnet ClassesIntro.cs -- add "Write documentation" --priority High --due 2026-04-01
-dotnet ClassesIntro.cs -- list --all
-dotnet ClassesIntro.cs -- complete 3
-dotnet ClassesIntro.cs -- remove 3
-dotnet ClassesIntro.cs -- --verbose list
+dotnet Program.cs
 
 I'm using
     dotnet run --project src/ClassesIntro
