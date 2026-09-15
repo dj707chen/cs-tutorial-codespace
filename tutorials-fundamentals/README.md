@@ -27,6 +27,10 @@ tests/
 ## Everyday commands
 
 ```bash
+dotnet sln App.slnx add src/ClassesIntro/ClassesIntro.csproj
+dotnet sln App.slnx add src/NullableIntroduction/NullableIntroduction.csproj 
+dotnet sln App.slnx add src/TaskCli/TaskCli.csproj                          
+
 dotnet restore                       # restore all projects
 dotnet build                         # build the solution
 dotnet test                          # run all tests

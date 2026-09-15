@@ -3,9 +3,9 @@
     <Project Path="src/App.Cli/App.Cli.csproj" />
     <Project Path="src/App.Core/App.Core.csproj" />
     <Project Path="src/AsciiArt/AsciiArt.csproj" />
-  </Folder>
-  <Folder Name="/src/NullableIntroduction/">
+    <Project Path="src/ClassesIntro/ClassesIntro.csproj" />
     <Project Path="src/NullableIntroduction/NullableIntroduction.csproj" />
+    <Project Path="src/TaskCli/TaskCli.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/App.Core.Tests/App.Core.Tests.csproj" />

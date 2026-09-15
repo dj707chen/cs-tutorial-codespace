@@ -29,46 +29,57 @@ Console.WriteLine("Hello, TaskCli!");
 ////////////////////////////////
 // Define options and arguments
 // https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/system-command-line#define-options-and-arguments
-var verboseOption = new Option<bool>("--verbose") {
+var verboseOption = new Option<bool>("--verbose")
+{
     Description = "Show detailed output",
     Recursive = true
 };
-var priorityOption = new Option<Priority>("--priority") {
+var priorityOption = new Option<Priority>("--priority")
+{
     Description = "Task priority level",
     DefaultValueFactory = _ => Priority.Medium
 };
-var dueOption = new Option<DateOnly?>("--due") {
+var dueOption = new Option<DateOnly?>("--due")
+{
     Description = "Due date (uses current culture date format)"
 };
-var allOption = new Option<bool>("--all") {
+var allOption = new Option<bool>("--all")
+{
     Description = "Include completed tasks"
 };
 
-var descriptionArgument = new Argument<string>("description") {
+var descriptionArgument = new Argument<string>("description")
+{
     Description = "Task description"
 };
-var taskIdArgument = new Argument<int>("id") {
+var taskIdArgument = new Argument<int>("id")
+{
     Description = "Task ID"
 };
 
 /////////////////////////////////////
 // Build commands and subcommands
 // https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/system-command-line#build-commands-and-subcommands
-var addCommand = new Command("add", "Add a new task") {
+var addCommand = new Command("add", "Add a new task")
+{
     Arguments = { descriptionArgument },
     Options = { priorityOption, dueOption }
 };
-var listCommand = new Command("list", "List all tasks") {
+var listCommand = new Command("list", "List all tasks")
+{
     Options = { allOption }
 };
-var completeCommand = new Command("complete", "Mark a task as complete") {
+var completeCommand = new Command("complete", "Mark a task as complete")
+{
     Arguments = { taskIdArgument }
 };
-var removeCommand = new Command("remove", "Remove a task") {
+var removeCommand = new Command("remove", "Remove a task")
+{
     Arguments = { taskIdArgument }
 };
 
-var rootCommand = new RootCommand("A simple task tracker CLI") {
+var rootCommand = new RootCommand("A simple task tracker CLI")
+{
     Options = { verboseOption },
     Subcommands = { addCommand, listCommand, completeCommand, removeCommand }
 };
