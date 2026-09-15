@@ -2,6 +2,9 @@
 //   https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop#create-different-types-of-accounts
 namespace ObjectOriented;
 
+/// <summary>
+/// The BankAccount class represents a bank account with an account number, owner, balance, and a list of transactions. It provides methods for making deposits and withdrawals, as well as generating an account history report. The class also supports a minimum balance requirement and allows for month-end transactions to be performed in derived classes.
+/// </summary>
 public class BankAccount
 {
     public string Number { get; }

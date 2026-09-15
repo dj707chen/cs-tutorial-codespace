@@ -9,7 +9,7 @@ public sealed class GreetingServiceTests
     private readonly GreetingService _sut = new(NullLogger<GreetingService>.Instance);
 
     [Fact]
-    public void Greet_returns_greeting_for_name()
+    public void GreetReturnsGreetingForName()
     {
         Assert.Equal("Hello, Ada!", _sut.Greet("Ada"));
     }
@@ -17,7 +17,7 @@ public sealed class GreetingServiceTests
     [Theory]
     [InlineData("")]
     [InlineData("   ")]
-    public void Greet_rejects_blank_names(string name)
+    public void GreetRejectsBlankNames(string name)
     {
         Assert.Throws<ArgumentException>(() => _sut.Greet(name));
     }
